@@ -1,0 +1,33 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"id": "osee-gostream-community",
+	"name": "Community Module for OSEE GoStream",
+	"shortname": "gostream-community",
+	"description": "Community module for OSEE GoStream Deck, Duet and Duet 8 ISO – v2 GSP protocol only (firmware v2.3.0+)",
+	"version": "2.5.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/dsorlov/companion-module-osee-gostream-community.git",
+	"bugs": "https://github.com/dsorlov/companion-module-osee-gostream-community/issues",
+	"maintainers": [
+		{
+			"name": "Daniel Sörlöv",
+			"email": "daniel@sorlov.com"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.12.0",
+		"entrypoint": "../src/main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "OSEE",
+	"products": ["GoStream Deck", "GoStream Duet", "GoStream Duet 8 ISO"],
+	"keywords": ["GoStream", "OSEE", "switcher", "video mixer"],
+	"bonjourQueries": {
+		"bonjourDevices": {
+			"type": "oseectrl",
+			"protocol": "tcp"
+		}
+	}
+}
