@@ -57,17 +57,17 @@ If the **Device** dropdown has entries, your GoStream device was discovered auto
 
 | Variable                              | Description                                       |
 | ------------------------------------- | ------------------------------------------------- |
-| `$(osee-gostream:pgm_source)`         | Current PGM source name                           |
-| `$(osee-gostream:pvw_source)`         | Current PVW source name                           |
-| `$(osee-gostream:transition_style)`   | Transition style name (Mix / Dip / Wipe)          |
-| `$(osee-gostream:transition_rate)`    | Transition rate (frames)                          |
-| `$(osee-gostream:ftb_status)`         | FTB active (1/0)                                  |
-| `$(osee-gostream:record_status)`      | Recording status string                           |
-| `$(osee-gostream:record_duration)`    | Recording duration (HH:MM:SS)                     |
-| `$(osee-gostream:record_duration_hm)` | Recording duration (HH:MM) — suitable for buttons |
-| `$(osee-gostream:live_status)`        | Streaming live status                             |
-| `$(osee-gostream:macro_running)`      | Macro currently running (1/0)                     |
-| `$(osee-gostream:macro_run_index)`    | Index of the running macro (1-based)              |
+| `$(gostream-community:pgm_source)`         | Current PGM source name                           |
+| `$(gostream-community:pvw_source)`         | Current PVW source name                           |
+| `$(gostream-community:transition_style)`   | Transition style name (Mix / Dip / Wipe)          |
+| `$(gostream-community:transition_rate)`    | Transition rate (frames)                          |
+| `$(gostream-community:ftb_status)`         | FTB active (1/0)                                  |
+| `$(gostream-community:record_status)`      | Recording status string                           |
+| `$(gostream-community:record_duration)`    | Recording duration (HH:MM:SS)                     |
+| `$(gostream-community:record_duration_hm)` | Recording duration (HH:MM) — suitable for buttons |
+| `$(gostream-community:live_status)`        | Streaming live status                             |
+| `$(gostream-community:macro_running)`      | Macro currently running (1/0)                     |
+| `$(gostream-community:macro_run_index)`    | Index of the running macro (1-based)              |
 
 ---
 
