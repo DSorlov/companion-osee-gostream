@@ -45,10 +45,18 @@ const Model = {
  */
 function getInputSources(model) {
 	const sources = []
-	const inputCount = model === Model.Duet8ISO ? 8 : 4
 
-	for (let i = 1; i <= inputCount; i++) {
+	// IN1–IN4 share the same IDs across all models
+	for (let i = 1; i <= 4; i++) {
 		sources.push({ id: i, label: `IN${i}` })
+	}
+
+	// On the Duet 8 ISO, IN5–IN8 use AUX source IDs (4001–4004)
+	if (model === Model.Duet8ISO) {
+		sources.push({ id: SourceID.AUX1, label: 'IN5' })
+		sources.push({ id: SourceID.AUX2, label: 'IN6' })
+		sources.push({ id: SourceID.AUX3, label: 'IN7' })
+		sources.push({ id: SourceID.AUX4, label: 'IN8' })
 	}
 	sources.push({ id: SourceID.ColorBar, label: 'Color Bar' })
 	sources.push({ id: SourceID.Color1, label: 'Color 1' })

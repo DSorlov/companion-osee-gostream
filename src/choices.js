@@ -146,7 +146,8 @@ function getMultiSourceWindowChoices(state) {
 /** Audio input source choices */
 function getAudioInputChoices(state) {
 	const modelId = state.device.modelId
-	const sources = getInputSources(modelId).filter((s) => s.id >= 1 && s.id <= 8)
+	// Include IN1–IN4 (IDs 1–4) and, on Duet 8 ISO, IN5–IN8 (IDs 4001–4004)
+	const sources = getInputSources(modelId).filter((s) => (s.id >= 1 && s.id <= 4) || (s.id >= 4001 && s.id <= 4004))
 	return [...sources, { id: 1301, label: 'MIC 1' }, { id: 1302, label: 'MIC 2' }, { id: 2301, label: 'Headphone' }]
 }
 

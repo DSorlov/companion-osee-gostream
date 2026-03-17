@@ -4,7 +4,7 @@
 	"name": "Community Module for OSEE GoStream",
 	"shortname": "gostream-community",
 	"description": "Community module for OSEE GoStream Deck, Duet and Duet 8 ISO – v2 GSP protocol only (firmware v2.3.0+)",
-	"version": "2.5.0",
+	"version": "2.5.1",
 	"license": "MIT",
 	"repository": "git+https://github.com/dsorlov/companion-module-osee-gostream-community.git",
 	"bugs": "https://github.com/dsorlov/companion-module-osee-gostream-community/issues",

@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.1] — 2026-03-17
+
+### Fixed
+
+- **Duet 8 ISO: IN5–IN8 source IDs corrected** — inputs 5–8 now use the correct protocol IDs (4001–4004) instead of the incorrect 5–8.
+
+---
+
 ## [2.5.0] — 2025-03-08
 
 ### Added
